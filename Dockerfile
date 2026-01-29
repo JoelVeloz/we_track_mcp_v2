@@ -22,9 +22,11 @@ COPY . .
 RUN npm run build
 
 # npx @better-auth/cli generate ## or (migrate)
-RUN npx @better-auth/cli generate
+# RUN npx @better-auth/cli generate
 
-RUN npx @better-auth/cli migrate
+RUN npx @better-auth/cli migrate -y
+
+
 
 # Verificar que los archivos estáticos se copiaron correctamente
 RUN ls -la .next/static/ && echo "Verificando archivos estáticos..."
