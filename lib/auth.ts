@@ -23,7 +23,7 @@ export const auth = betterAuth({
 		// }),
 
 		mcp({
-			loginPage: "/sign-in",
+			loginPage: "/login",
 
 		}),
 	],
