@@ -1,4 +1,4 @@
-import { oauthProviderAuthServerMetadata } from "@better-auth/oauth-provider";
+import { oAuthDiscoveryMetadata } from "better-auth/plugins";
 import { auth } from "../../../lib/auth";
 
-export const GET = oauthProviderAuthServerMetadata(auth);
+export const GET = oAuthDiscoveryMetadata(auth);
