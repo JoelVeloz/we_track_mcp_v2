@@ -4,7 +4,8 @@ import Database from "better-sqlite3";
 
 export const auth = betterAuth({
 	database: new Database("./auth.db"),
-	baseURL: "http://localhost:3000",
+	// baseURL: "http://localhost:3000",
+	baseURL: process.env.BASE_URL,
 	plugins: [
 		mcp({
 			loginPage: "/login",
